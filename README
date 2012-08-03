@@ -1,0 +1,24 @@
+This folder contains the source code of the solution for Doublebeam programming exercise by Alexander Sergeev (me@alxsrg.com)
+HOW TO BUILD
+You need a C compiler to build this stuff.
+I use Mac OS X with gcc (and Xcode).
+On your system, the build process may differs.
+Mac OS X or Linux:
+$ gcc AlxSrgDoublebeamSrc/AlxSrgDoublebeam/main.c -o AlxSrgDoublebeam
+Mac OS X (XCode)
+Load AlxSrgDoublebeamSrc/AlxSrgDoublebeam.xcodeproj into Xcode and hit the "Build" button
+Windows
+I don't know. The code is located in AlxSrgDoublebeamSrc/AlxSrgDoublebeam/ main.c
+USAGE
+This is a console application; it accepts two arguments - string1 and string2
+$ ./AlxSrgDoublebeam string1 string 2
+for example,
+$ ./AlxSrgDoublebeam abc abc aabbcc
+$ ./AlxSrgDoublebeam abc def cba
+fed
+$ ./AlxSrgDoublebeam def abc cfbead
+SOURCE CODE
+The code is located in AlxSrgDoublebeamSrc/AlxSrgDoublebeam/main.c
+My version of MyStrCmp takes const char* instead of char* because we do not need to change the string content here.
+The source code includes some tests, but they are commented out.
+I wrote them for my own purposes. Yes, they include strcmp function call in order to check the correctness of my own MyStrCmp version.
