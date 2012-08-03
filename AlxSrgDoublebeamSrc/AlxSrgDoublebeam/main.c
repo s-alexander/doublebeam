@@ -68,7 +68,7 @@ void Swap(char * str, size_t len) {
 // Don't forget to free the result
 char * allocSwappedStr(const char * str) {
 	const size_t sz = strlen(str)+1;
-	char * buff = malloc(sz);
+	char * buff = SafeMAlloc(sz);
 	strncpy(buff, str, sz);
 	Swap(buff, sz-1);
 	return buff;
@@ -91,7 +91,7 @@ char * mergeChar(char * buff, const char ** source) {
 // Don't forget to free the result
 char * allocMergedStr(const char * s1, const char * s2) {
 	size_t sz = strlen(s1) + strlen(s2) + 1;
-	char * buff = malloc(sz);
+	char * buff = SafeMAlloc(sz);
 	const char * p1 = s1;
 	const char * p2 = s2;
 	char * out = buff;
