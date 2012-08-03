@@ -1,0 +1,211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAFEAFAD15CBC02300DFACA0 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = FAFEAFAC15CBC02300DFACA0 /* main.c */; };
+		FAFEAFAF15CBC02300DFACA0 /* AlxSrgDoublebeam.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAFEAFAE15CBC02300DFACA0 /* AlxSrgDoublebeam.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAFEAFA615CBC02300DFACA0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				FAFEAFAF15CBC02300DFACA0 /* AlxSrgDoublebeam.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FAFEAFA815CBC02300DFACA0 /* AlxSrgDoublebeam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlxSrgDoublebeam; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFEAFAC15CBC02300DFACA0 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		FAFEAFAE15CBC02300DFACA0 /* AlxSrgDoublebeam.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = AlxSrgDoublebeam.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFEAFA515CBC02300DFACA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFEAF9D15CBC02300DFACA0 = {
+			isa = PBXGroup;
+			children = (
+				FAFEAFAB15CBC02300DFACA0 /* AlxSrgDoublebeam */,
+				FAFEAFA915CBC02300DFACA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFEAFA915CBC02300DFACA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFEAFA815CBC02300DFACA0 /* AlxSrgDoublebeam */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFEAFAB15CBC02300DFACA0 /* AlxSrgDoublebeam */ = {
+			isa = PBXGroup;
+			children = (
+				FAFEAFAC15CBC02300DFACA0 /* main.c */,
+				FAFEAFAE15CBC02300DFACA0 /* AlxSrgDoublebeam.1 */,
+			);
+			path = AlxSrgDoublebeam;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFEAFA715CBC02300DFACA0 /* AlxSrgDoublebeam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFEAFB215CBC02300DFACA0 /* Build configuration list for PBXNativeTarget "AlxSrgDoublebeam" */;
+			buildPhases = (
+				FAFEAFA415CBC02300DFACA0 /* Sources */,
+				FAFEAFA515CBC02300DFACA0 /* Frameworks */,
+				FAFEAFA615CBC02300DFACA0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlxSrgDoublebeam;
+			productName = AlxSrgDoublebeam;
+			productReference = FAFEAFA815CBC02300DFACA0 /* AlxSrgDoublebeam */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFEAF9F15CBC02300DFACA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Alexander Sergeev";
+			};
+			buildConfigurationList = FAFEAFA215CBC02300DFACA0 /* Build configuration list for PBXProject "AlxSrgDoublebeam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAFEAF9D15CBC02300DFACA0;
+			productRefGroup = FAFEAFA915CBC02300DFACA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFEAFA715CBC02300DFACA0 /* AlxSrgDoublebeam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFEAFA415CBC02300DFACA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFEAFAD15CBC02300DFACA0 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAFEAFB015CBC02300DFACA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FAFEAFB115CBC02300DFACA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FAFEAFB315CBC02300DFACA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAFEAFB415CBC02300DFACA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFEAFA215CBC02300DFACA0 /* Build configuration list for PBXProject "AlxSrgDoublebeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFEAFB015CBC02300DFACA0 /* Debug */,
+				FAFEAFB115CBC02300DFACA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFEAFB215CBC02300DFACA0 /* Build configuration list for PBXNativeTarget "AlxSrgDoublebeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFEAFB315CBC02300DFACA0 /* Debug */,
+				FAFEAFB415CBC02300DFACA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFEAF9F15CBC02300DFACA0 /* Project object */;
+}
