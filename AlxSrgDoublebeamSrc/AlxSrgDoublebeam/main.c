@@ -44,6 +44,7 @@ int MyStrCmp(const char *s1, const char *s2) {
 // Allocate memory just like malloc do, but calls abort() if smth goes wrong.
 void * SafeMAlloc(size_t sz) {
   void * res = malloc(sz);
+  //memset(res, 0, sz);
   if (0 == res) {
     printf("Can't alloc memory. Buy more RAM, dude.");
     abort();
@@ -99,6 +100,7 @@ char * allocMergedStr(const char * s1, const char * s2) {
 		out = mergeChar(out, &p1);
 		out = mergeChar(out, &p2);
 	}
+	buff[sz-1] = 0;
 	return buff;
 }
 
@@ -113,19 +115,19 @@ void TestSwap(const char * testString) {
 
 // Test comparasion function
 void TestCmp(const char * str1, const char * str2) {
-  
+
 	const int strcmpValue = strcmp(str1, str2); // Yes, I use strcmp here, but just for checking my own function results
 	int myValue = MyStrCmp(str1, str2);
-  
+
 	int testFailed = ((strcmpValue < 0) != (myValue < 0) || (strcmpValue > 0) != (myValue > 0));
-  
+
   const char * resStr = "=";
 	if (myValue > 0) {
 		resStr = ">";
 	} else if (myValue < 0) {
 		resStr = "<";
 	}
-  
+
 	printf("[%s] %s [%s] %s\n", str1, resStr, str2, (testFailed ? "!!!" : "OK"));
 }
 
@@ -162,7 +164,7 @@ void DoTests() {
   TestSwap("ab");
   TestSwap("abc");
   TestSwap("abcd");
-  
+
   TestCmp("aaa", "aaa");
   TestCmp("aaa", "aab");
   TestCmp("xyz", "aab");
@@ -172,7 +174,7 @@ void DoTests() {
   TestCmp("", "aabccc");
   TestCmp("", "");
   TestCmp("abcdefg", "xyz");
-  
+
   DoTheJob("abc", "abc");
   DoTheJob("abc", "uvwxyz");
   DoTheJob("uvwxyz", "abc");
